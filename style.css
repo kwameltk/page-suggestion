@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.wrapper{
+    width: 80%;
+    background-color: #eee;
+    height: 100vh;
+    margin: 50px auto;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.wrapper aside{
+    width: 30%;
+    /*background-color: red;*/
+    height: 100%;
+}
+.wrapper aside .box{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.wrapper aside .box.box1{
+    background-image: linear-gradient(40deg,blue,purple,orange);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.wrapper aside .box.box2 span{
+background-color: #dcdfee;
+padding: 12px 20px;
+display: inline-block;
+border-radius: 20px;
+color: #0000b6;
+font-weight: bold;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.wrapper aside .box.box2 span.bcolor{
+background-color: #0000b6;
+color: white ;
+}
+.wrapper aside .box.box3 .road{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.wrapper aside .box.box3 .planned{
+   
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrapper aside .box.box3 .planned .grab{
+    
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wrapper aside .box.box3 .planned .grab .bullet{
+    width: 10px;
+    height: 10px;
+   
+    border-radius:50px;
+}
+.wrapper aside .box.box3 .planned .grab p{
+    
+    width: 80%;
+}
+.wrapper aside .box.box3 .planned .bullet.purple{
+    background-color: purple;
+}
+.wrapper aside .box.box3 .planned .bullet.green{
+    background-color: green;
+}
+.wrapper aside .box.box3 .planned .bullet.yellow{
+    background-color: yellow;
+}
+.wrapper aside .box.box3 .planned .p2{
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.wrapper aside .box.box1 h3{
+    margin-bottom: 5px;
+}
+.wrapper main{
+
+    width: 67%;
+    /*background-color: blue;*/
+    height: 100%;
+}
+.wrapper main .box{
+    width: 100%;
+    background-color:white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.wrapper main .box.box1{
+    background-color: rgb(11, 11, 82);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    
+}
+
+.wrapper main .box.box1 .suggest{
+    font-size: 25px;
+    color: white;
+}
+
+.wrapper main .box.box1 .firsts{
+    color: grey;
+}
+.wrapper main .box.box1 .sort{
+    color: white;
+}
+.wrapper main .box.box1 .back a{
+    background-color: purple;
+    color: #fff;
+ padding: 10px 20px;
+ border-radius: 10px;
+}
+.wrapper main .box.box2{
+    padding: 20px 30px;
+display: flex;
+justify-content: space-between;
+}
+
+.wrapper main .box.box2 .message .icon {
+   padding-right: 5px;
+}
+.wrapper main .box.box2 .solution{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.wrapper main .box.box2 .solution .tag{
+    background-color: #dcdfee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 7px;
+    height: fit-content;
+}
+
+.wrapper main .box.box2 .solution .tag .icon{
+    font-weight: bold;
+    color: #0000b6;
+}
+
+.wrapper main .box.box2 .solution .tag .p{
+    font-weight: bold;
+    color: #28015a;
+}
+.wrapper main .box.box2 .solution .add{
+    
+   padding-right: 350px;
+   padding-left: 50px;
+}
+
+.wrapper main .box.box2 .solution .add h2{
+    margin-bottom: 7px;
+}
+.wrapper main .box.box2 .solution .add p{
+    margin-bottom: 10px;
+}
+
+.wrapper main .box.box2 .solution .add a{
+    background-color: #dcdfee;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: #0000b6;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.wrapper main .box.box2 .message{
+    display: flex;
+    align-items: center;
+}
+.wrapper main .box.box2 .message p{
+font-weight: bold;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 911px ){
+    .wrapper{
+        width: 95%;
+        flex-direction: column;
+    }
+    .wrapper main{
+        width: 100%;
+    }
+    .wrapper aside{
+        width: 100%;
+    }
+
+    .wrapper main .box.box1{
+        font-size: 10px;
+    }
+}
+
